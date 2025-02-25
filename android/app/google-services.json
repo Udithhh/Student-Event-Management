@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042633772076",
+    "project_id": "fire-management-9ee79",
+    "storage_bucket": "fire-management-9ee79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042633772076:android:db5c5bbe7c9e106a299589",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqvxXARQ-hSc1OiJB4nGtxe4tj3eJvhmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
