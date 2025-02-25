@@ -44,7 +44,10 @@ class AuthService {
       UserCredential userCredential = await _auth
           .createUserWithEmailAndPassword(email: email, password: password);
 
-      await _fireStore.collection("organizer").doc(userCredential.user?.uid).set({
+      await _fireStore
+          .collection("organizer")
+          .doc(userCredential.user?.uid)
+          .set({
         'email': email,
         'password': password,
         'name': name,
@@ -57,7 +60,8 @@ class AuthService {
     }
   }
 
-  Future<UserCredential?> orgSignInWithEmail(String email, String password) async {
+  Future<UserCredential?> orgSignInWithEmail(
+      String email, String password) async {
     try {
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
           email: email, password: password);
@@ -66,5 +70,9 @@ class AuthService {
       log("Error : ${e.toString()}");
       return null;
     }
+  }
+
+  Future<void> orgLogout() async {
+    await _auth.signOut();
   }
 }
